@@ -1,0 +1,94 @@
+{
+    "Sidebar": {
+        "home": "Home",
+        "reporting": "Reports",
+        "logOut": "Sign out"
+    },
+    "LoginPage": {
+        "title": "Sign in",
+        "subtitle": "Enter your email to sign in",
+        "email": "Email",
+        "password": "Password",
+        "forgotPassword": "Forgot my password",
+        "signIn": "Sign in",
+        "or": "Or",
+        "withGoogle": "Sign in with Google",
+        "withGithub": "Sign in with GitHub",
+        "noAccount": "Don't have an account?",
+        "forgotPassSubtitle": "Enter your email to get a recovery link",
+        "sendLink": "Send recovery link",
+        "footerNote": "© 2024 Random Inc. All rights reserved.",
+        "success": "Email sent!",
+        "error": "Error",
+        "linkSent": "Recovery link has been sent to your email account",
+        "OAuthSignin": "There was an error while constructing an authorization URL, please try again",
+        "OAuthCallback": "There was an error while handling the response from an OAuth provider, please try again",
+        "OAuthCreateAccount": "Could not create OAuth provider user in the database, please try again",
+        "EmailCreateAccount": "Could not create email provider user in the database, please try again",
+        "Callback": "There was an error in the OAuth callback handler route, please try again",
+        "OAuthAccountNotLinked": "The associated email is already registered with another provider, please try with the proper provider",
+        "EmailSignin": "There was an error while sending the e-mail with the verification token, please try again",
+        "CredentialsSignin": "The credentials used do not match any account, please try again",
+        "Default": "There was an error with the login, please try again"
+    },
+    "CreateAccountDialog": {
+        "title": "Create an account",
+        "fullname": "Full name",
+        "email": "Email",
+        "password": "Password",
+        "repassword": "Repeat your password",
+        "termsConditionsLabel": "By creating an account you're agreeing to our",
+        "termsConditions": "Terms and Conditions.",
+        "createAccount": "Create account",
+        "success": "Success!",
+        "error": "Error",
+        "accountCreated": "Your account has been created successfully!"
+    },
+    "DialogValidations": {
+        "mandatoryValidation": "This field is mandatory",
+        "fullnameMinValidation": "Full name must contain at least 2 characters",
+        "emailValidation": "Please enter a valid email address",
+        "passwordValidation": "Password must have at least 8 characters",
+        "repasswordValidation": "Passwords don't match",
+        "docnumberValidation": "ID number must not be empty",
+        "phoneValidation": "Phone number must have at least 5 characters",
+        "addressValidation": "Address must not be empty",
+        "positiveValidation": "Please enter a positive number"
+    },
+    "EmployeesPage": {
+        "title": "Employees",
+        "noData": "You still haven't uploaded your data",
+        "fullname": "Full Name",
+        "docnumber": "ID number",
+        "phone": "Phone number",
+        "address": "Address",
+        "salary": "Salary",
+        "updatedAt": "Last Update",
+        "lastUpdatedAt": "Last updated at "
+    },
+    "UpdateEmployeeDialog": {
+        "update": "Update information",
+        "title": "Update my personal information",
+        "fullname": "Full name",
+        "docnumber": "ID number",
+        "phone": "Phone number",
+        "address": "Address",
+        "salary": "Salary",
+        "success": "Success!",
+        "error": "Error",
+        "dataUpdated": "Your information has been updated"
+    },
+    "Table": {
+        "noData": "No data to show...",
+        "globalFilter": "Global filters",
+        "previous": "Previous",
+        "next": "Next"
+    },
+    "ReportingPage": {
+        "title": "Salary report"
+    },
+    "SignOutPage": {
+        "title": "Sign out",
+        "message": "Are you sure you want to sign out?"
+    }
+}

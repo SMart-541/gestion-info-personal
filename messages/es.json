@@ -1,0 +1,94 @@
+{
+    "Sidebar": {
+        "home": "Inicio",
+        "reporting": "Reporte",
+        "logOut": "Cerrar sesión"
+    },
+    "LoginPage": {
+        "title": "Iniciar sesión",
+        "subtitle": "Ingrese su email para iniciar sesión",
+        "email": "Email",
+        "password": "Contraseña",
+        "forgotPassword": "Olvidé mi contraseña",
+        "signIn": "Iniciar sesión",
+        "or": "O",
+        "withGoogle": "Iniciar sesión con Google",
+        "withGithub": "Iniciar sesión con GitHub",
+        "noAccount": "¿No tiene una cuenta?",
+        "forgotPassSubtitle": "Ingrese su email para obtener un link de recuperación",
+        "sendLink": "Enviar link de recuperación",
+        "footerNote": "© 2024 Random Inc. Todos los derechos reservados.",
+        "success": "Email enviado!",
+        "error": "Error",
+        "linkSent": "El link de recuperación se ha enviado a tu cuenta de email",
+        "OAuthSignin": "Hubo un error al construir la URL de autorización, por favor intente de nuevo",
+        "OAuthCallback": "Hubo un error al manejar la respuesta de un proveedor de OAuth, por favor intente de nuevo",
+        "OAuthCreateAccount": "No se pudo crear un usuario para este proveedor de OAuth en la base de datos, por favor intente de nuevo",
+        "EmailCreateAccount": "No se pudo crear un usuario para este proveedor de email en la base de datos, por favor intente de nuevo",
+        "Callback": "Hubo un error en el manejo de la ruta de OAuth, por favor intente de nuevo",
+        "OAuthAccountNotLinked": "El email asociado a esta cuenta se encuentra registrado con otro proveedor de OAuth, por favor intente de nuevo con el proveedor correcto",
+        "EmailSignin": "Hubo un error al enviar el email con el token de verificación, por favor intente de nuevo",
+        "CredentialsSignin": "Las credenciales usadas no conciden con niguna cuenta, por favor intente de nuevo",
+        "Default": "Hubo un error con el login, por favor intente de nuevo"
+    },
+    "CreateAccountDialog": {
+        "title": "Crear una cuenta",
+        "fullname": "Nombre completo",
+        "email": "Email",
+        "password": "Contraseña",
+        "repassword": "Repita su contraseña",
+        "termsConditionsLabel": "Al crear una cuenta estas accediendo a nuestros",
+        "termsConditions": "Términos y Condiciones.",
+        "createAccount": "Crear cuenta",
+        "success": "Exito!",
+        "error": "Error",
+        "accountCreated": "Tu cuenta se ha creado exitosamente!"
+    },
+    "DialogValidations": {
+        "mandatoryValidation": "Este campo es obligatorio",
+        "fullnameMinValidation": "El nombre debe contener al menos 2 caracteres",
+        "emailValidation": "Por favor ingrese un email válido",
+        "passwordValidation": "La contraseña debe contener al menos 8 caracteres",
+        "repasswordValidation": "Las contraseñas no conciden",
+        "docnumberValidation": "El número de documento no debe estar vacío",
+        "phoneValidation": "El número de teléfono debe contener al menos 5 caracteres",
+        "addressValidation": "La dirección debe contener al menos 1 caracter",
+        "positiveValidation": "Por favor ingrese un número positivo"
+    },
+    "EmployeesPage": {
+        "title": "Empleados",
+        "noData": "Aún no has cargado tus datos",
+        "fullname": "Nombre completo",
+        "docnumber": "Núm. de documento",
+        "phone": "Teléfono",
+        "address": "Dirección",
+        "salary": "Salario",
+        "updatedAt": "Última actualización",
+        "lastUpdatedAt": "Actualizado el "
+    },
+    "UpdateEmployeeDialog": {
+        "update": "Actualizar datos",
+        "title": "Actualizar mis datos",
+        "fullname": "Nombre completo",
+        "docnumber": "Núm. de documento",
+        "phone": "Teléfono",
+        "address": "Dirección",
+        "salary": "Salario",
+        "success": "Exito!",
+        "error": "Error",
+        "dataUpdated": "Tus datos se han actualizado"
+    },
+    "Table": {
+        "noData": "No hay datos para mostrar...",
+        "globalFilter": "Filtros globales",
+        "previous": "Anterior",
+        "next": "Siguiente"
+    },
+    "ReportingPage": {
+        "title": "Reporte de salarios"
+    },
+    "SignOutPage": {
+        "title": "Cerrar sesión",
+        "message": "¿Estás seguro de que quieres cerrar tu sesión?"
+    }
+}
