@@ -8,26 +8,19 @@ const bcrypt = require('bcrypt');
 export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams
     const email = searchParams.get('email')
-
-    console.log(email);
-
     if (!email)
         return NextResponse.json({
             error: "The request is missing a required field"
         }, { status: 400 });
-
     const exist = await prisma.user.findUnique({
         where: {
             email: email
         }
     });
-
     if (!exist)
         return NextResponse.json({
             error: "User does not exist"
         }, { status: 400 });
-
-
     return NextResponse.json({});
 }
 

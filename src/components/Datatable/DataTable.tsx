@@ -58,7 +58,6 @@ export function DataTable<TData, TValue>({
                     placeholder={strings("globalFilter")}
                     value={globalFilter ?? ''}
                     onChange={event => {
-                        console.log(event.target.value)
                         setGlobalFilter(String(event.target.value))
                     }}
                 />

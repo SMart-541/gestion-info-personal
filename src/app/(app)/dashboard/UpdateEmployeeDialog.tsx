@@ -79,14 +79,6 @@ export function UpdateEmployeeDialog({ employee }: any) {
         }
     }, [])
 
-    /*if (employee != null) {
-        form.setValue("fullname", employee.fullname)
-        form.setValue("docnumber", employee.docnumber)
-        form.setValue("phone", employee.phone)
-        form.setValue("address", employee.address)
-        form.setValue("salary", employee.salary)
-    }*/
-
     const handleSubmit = async (values: z.infer<typeof formSchema>) => {
         setLoading(true)
 
