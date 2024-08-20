@@ -65,21 +65,24 @@ export function UpdateEmployeeDialog({ employee }: any) {
             }),
     })
 
+    /*const values = employee != null ? formSchema.parse({
+        fullname: employee.fullname,
+        docnumber: employee.docnumber,
+        phone: employee.phone,
+        address: employee.address,
+        salary: employee.salary,
+    }) : {}*/
+
     var form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema)
     })
 
     if (employee != null) {
-        form = useForm<z.infer<typeof formSchema>>({
-            resolver: zodResolver(formSchema),
-            values: formSchema.parse({
-                fullname: employee.fullname,
-                docnumber: employee.docnumber,
-                phone: employee.phone,
-                address: employee.address,
-                salary: employee.salary,
-            }),
-        })
+        form.setValue("fullname", employee.fullname)
+        form.setValue("docnumber", employee.docnumber)
+        form.setValue("phone", employee.phone)
+        form.setValue("address", employee.address)
+        form.setValue("salary", employee.salary)
     }
 
     const handleSubmit = async (values: z.infer<typeof formSchema>) => {
