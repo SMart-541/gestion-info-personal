@@ -65,8 +65,12 @@ export function UpdateEmployeeDialog({ employee }: any) {
             }),
     })
 
-    const form = employee != null ?
-        useForm<z.infer<typeof formSchema>>({
+    var form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema)
+    })
+
+    if (employee != null) {
+        form = useForm<z.infer<typeof formSchema>>({
             resolver: zodResolver(formSchema),
             values: formSchema.parse({
                 fullname: employee.fullname,
@@ -75,10 +79,8 @@ export function UpdateEmployeeDialog({ employee }: any) {
                 address: employee.address,
                 salary: employee.salary,
             }),
-        }) :
-        useForm<z.infer<typeof formSchema>>({
-            resolver: zodResolver(formSchema)
         })
+    }
 
     const handleSubmit = async (values: z.infer<typeof formSchema>) => {
         setLoading(true)
