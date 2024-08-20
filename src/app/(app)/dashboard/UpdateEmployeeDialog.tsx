@@ -65,14 +65,6 @@ export function UpdateEmployeeDialog({ employee }: any) {
             }),
     })
 
-    /*const values = employee != null ? formSchema.parse({
-        fullname: employee.fullname,
-        docnumber: employee.docnumber,
-        phone: employee.phone,
-        address: employee.address,
-        salary: employee.salary,
-    }) : {}*/
-
     var form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema)
     })
