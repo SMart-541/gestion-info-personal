@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/components/ui/use-toast"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -69,13 +69,23 @@ export function UpdateEmployeeDialog({ employee }: any) {
         resolver: zodResolver(formSchema)
     })
 
-    if (employee != null) {
+    useEffect(() => {
+        if (employee != null) {
+            form.setValue("fullname", employee.fullname)
+            form.setValue("docnumber", employee.docnumber)
+            form.setValue("phone", employee.phone)
+            form.setValue("address", employee.address)
+            form.setValue("salary", employee.salary)
+        }
+    }, [])
+
+    /*if (employee != null) {
         form.setValue("fullname", employee.fullname)
         form.setValue("docnumber", employee.docnumber)
         form.setValue("phone", employee.phone)
         form.setValue("address", employee.address)
         form.setValue("salary", employee.salary)
-    }
+    }*/
 
     const handleSubmit = async (values: z.infer<typeof formSchema>) => {
         setLoading(true)
