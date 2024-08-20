@@ -12,7 +12,7 @@ import { getFormatter, getTranslations } from 'next-intl/server';
 export default async function MyData() {
     const formatter = await getFormatter()
     const strings = await getTranslations("EmployeesPage")
-    const employee = await getMyEmployeeAction()
+    const employee = await getMyEmployeeAction() as any
 
     function formatDate(date: Date) {
         return formatter.dateTime(date, {
