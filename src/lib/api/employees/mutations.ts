@@ -37,10 +37,9 @@ export const updateEmployee = async (id: EmployeeId, employee: UpdateEmployeePar
 };
 
 export const deleteEmployee = async (id: EmployeeId) => {
-  const { session } = await getUserAuth();
   const { id: employeeId } = employeeIdSchema.parse({ id });
   try {
-    const e = await db.employee.delete({ where: { id: employeeId, userId: session?.user.id! } })
+    const e = await db.employee.delete({ where: { id: employeeId } })
     return { employee: e };
   } catch (err) {
     const message = (err as Error).message ?? "Error, please try again";
