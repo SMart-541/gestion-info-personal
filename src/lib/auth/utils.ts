@@ -42,7 +42,10 @@ export const authOptions: NextAuthOptions = {
     },
     async session({ session, token, user }) {
       // Send properties to the client, like an access_token and user id from a provider.
-      session.user.id = token.id
+      if (token.sub){
+        session.user.id = token.sub
+      }
+      
       return session
     }
   },
@@ -74,8 +77,8 @@ export const authOptions: NextAuthOptions = {
       clientSecret: env.GOOGLE_CLIENT_SECRET,
     }),
     GitHubProvider({
-      clientId: process.env.GITHUB_CLIENT_ID,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      clientId: env.GITHUB_CLIENT_ID,
+      clientSecret: env.GITHUB_CLIENT_SECRET,
     })
   ],
   session: {
@@ -86,7 +89,7 @@ export const authOptions: NextAuthOptions = {
     signOut: '/',
     error: '/',
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: env.NEXTAUTH_SECRET,
 };
 
 export const getUserAuth = async () => {
